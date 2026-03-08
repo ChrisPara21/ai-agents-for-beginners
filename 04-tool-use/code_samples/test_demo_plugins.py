@@ -18,6 +18,7 @@ def test_time_plugin():
     time_str = time_plugin.get_current_time()
     # Expect format YYYY-MM-DD HH:MM:SS
     assert len(time_str) == 19
+    
     assert "-" in time_str
     assert ":" in time_str
     print("test_time_plugin passed")
